@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'DownloadManager'
   s.version          = '0.1.0'
-  s.summary          = 'DownloadManager is user for download images, json, xml or anykind of documents.'
+  s.summary          = 'DownloadManager is user for download anykind of documents.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,9 +17,7 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+  s.description      = 'This pod can send url request and parse response in favor of images, json, xml, ... documents. Also support cancel request, max memory caching.'
 
   s.homepage         = 'https://github.com/namdq1969/DownloadManager'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
