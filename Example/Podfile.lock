@@ -1,0 +1,16 @@
+PODS:
+  - DownloadManager (0.1.0)
+
+DEPENDENCIES:
+  - DownloadManager (from `../`)
+
+EXTERNAL SOURCES:
+  DownloadManager:
+    :path: ../
+
+SPEC CHECKSUMS:
+  DownloadManager: 43d9026c808b10b6b94db6d805c0a7314c9e7adc
+
+PODFILE CHECKSUM: b031d9026b5de8c5f354703f8289105792663721
+
+COCOAPODS: 1.0.1
