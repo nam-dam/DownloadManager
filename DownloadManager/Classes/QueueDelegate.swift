@@ -42,6 +42,9 @@ internal class QueueDelegate: NSOperationQueue {
     func startNextOperation(closure: () -> Void) {
         let operation = NSOperation()
         operation.completionBlock = closure
+        if taskQueue.count > maxConcurrentOperationCount {
+            waitUntilAllOperationsAreFinished()
+        }
         addOperation(operation)
     }
 }

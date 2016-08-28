@@ -20,7 +20,7 @@ public class DownloadRequest<T> {
         onFailure = nil
     }
 
-    func responseSuccess(closure: ((T) -> Void)? = nil) -> Self {
+    public func responseSuccess(closure: ((T) -> Void)? = nil) -> Self {
         if cacheResult != nil {
             closure!(cacheResult)
             return self
@@ -29,7 +29,7 @@ public class DownloadRequest<T> {
         return self
     }
 
-    func responseFailure(closure: ((status: String, code: Int!) -> Void)? = nil) -> Self {
+    public func responseFailure(closure: ((status: String, code: Int!) -> Void)? = nil) -> Self {
         onFailure = closure
         return self
     }

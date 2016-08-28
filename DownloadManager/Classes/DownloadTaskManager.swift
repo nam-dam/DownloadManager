@@ -31,7 +31,7 @@ public class DownloadTaskManager: NSObject {
     public static let manager = DownloadTaskManager()
 
     public var cacheObjects = true
-    public var maxConcurrentTasks = 100
+    public var maxConcurrentTasks = 5
     public var maxCacheSize = 51200 * 1024 // in KB
 
     private var cachedObjects = [ObjectBundle]()
@@ -98,6 +98,7 @@ public class DownloadTaskManager: NSObject {
         if let cachedObject = getRequestObject(urlString) {
             let request = DownloadRequest<AnyObject>()
             request.cacheResult = cachedObject
+            print("object was cached")
             return request
         } else {
             return task.requestUrl(urlString, requestId: requestId)

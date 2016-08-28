@@ -9,8 +9,8 @@
 import Foundation
 
 public class CoreObject: AnyObject, Equatable {
-    var urlString: String = ""
-    var value: AnyObject
+    public var urlString: String = ""
+    public var value: AnyObject
     init(urlString: String, value: AnyObject) {
         self.urlString = urlString
         self.value = value

@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "summary": "A short description of DownloadManager.",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/DownloadManager",
+  "homepage": "https://github.com/namdq1969/DownloadManager",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,7 +12,7 @@
     "namqdam": "namdq1969@gmail.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/DownloadManager.git",
+    "git": "https://github.com/namdq1969/DownloadManager.git",
     "tag": "0.1.0"
   },
   "platforms": {
