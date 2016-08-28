@@ -24,14 +24,7 @@ class ViewController: UIViewController {
 
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        let urlString = "http://crickt.xyz:8080/user/id/5"
         let _urlString = "https://i.ytimg.com/vi/tntOCGkgt98/maxresdefault.jpg"
-
-        DownloadTaskManager.manager.sendRequest(urlString)!.responseSuccess({ (data) in
-            let object = DownloadTaskManager.manager.parseJson(urlString, data: data)
-            print(object!.value)
-        })
-
         DownloadTaskManager.manager.sendRequest(_urlString)!.responseSuccess({ [weak self] (data) in
             if let object = DownloadTaskManager.manager.parseImage(_urlString, data: data) {
                 self?.imageView.image = object.value as? UIImage
